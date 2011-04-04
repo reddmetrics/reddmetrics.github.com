@@ -35,15 +35,15 @@ p {
 }
 
 a {
-  color: #00a;
+  color: gray;
 }
 
 a:hover {
-  color: black;
+  color: #404040;
 }
 
 a:visited {
-  color: #a0a;
+/*  color: #660066;*/
 }
 
 table {
@@ -72,6 +72,23 @@ ul.posts {
     font-size: 80%;
   }
 
+ul.projects {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+  ul.projects li {
+    line-height: 1.75em;
+    color: #a00;
+  }
+
+  ul.projects div {
+    padding-left: 1em;
+    line-height: 1.25em;
+    color: gray;
+  }
+
+
 /*****************************************************************************/
 /*
 /* Site
@@ -90,6 +107,7 @@ ul.posts {
   color: #a00;
   font-weight: bold;
   margin-bottom: 2em;
+  text-align: right;
 }
 
   .site .title a {
@@ -98,7 +116,7 @@ ul.posts {
   }
 
   .site .title a:hover {
-    color: black;
+    color: #a00;
   }
 
   .site .title a.extra {
@@ -108,7 +126,7 @@ ul.posts {
   }
 
   .site .title a.extra:hover {
-    color: black;
+    color: #696969;
   }
 
   .site .meta {
@@ -129,7 +147,7 @@ ul.posts {
     }
 
       .site .footer .contact a {
-        color: #8085C1;
+        color: gray;
       }
 
     .site .footer .rss {
@@ -141,6 +159,26 @@ ul.posts {
       .site .footer .rss img {
         border: 0;
       }
+
+
+
+/*****************************************************************************/
+/*
+/* Person
+/*
+/*****************************************************************************/
+
+#person {
+
+}
+
+  /* standard */
+
+#person ul {
+  list-style-type: none;
+  color: #404040;
+  line-height: 1.25em;
+}
 
 /*****************************************************************************/
 /*

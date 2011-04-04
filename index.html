@@ -1,25 +1,46 @@
 ---
 layout: default
-title: Sam Ritchie
+title: REDD Metrics
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+	
+	<div>
+	Founded in early 2011, REDD Metrics, LLC, is a group that applies innovations in large-scale spatial data processing to questions in environmental and resource economics.  This site is very new, and will be further developed in the coming months.  In the meantime, please feel free to find out a little more about us and our projects - and please subscribe to our blog, which will track our work in  economics and large-scale spatial processing.
+	</div>
+	</br>
 
-  <h1>Interviews, Talks, Etc</h1>
-  <ul class="posts">
-    <li><span>12 Jan 2011</span> &raquo; <a href="http://www.maestrosdelweb.com/editorial/tom-preston-werner-fundador-de-github/">Maestros del Web: Tom Preston-Werner fundador de GitHub</a></li>
-    <li><span>11 Nov 2010</span> &raquo; <a href="http://confreaks.net/videos/432-rubyconf2010-the-road-from-ruby-hacker-to-entrepreneur">Video: RubyConf 2010 - The Road from Ruby Hacker to Entrepreneur</a></li>
-    <li><span>16 Oct 2010</span> &raquo; <a href="http://lambdaphant.com/blog/interview-with-tom-preston-werner-from-github">Lambdaphant interview with Tom Preston-Werner</a></li>
-  </ul>
-
-  <h1>Prominent Open Source Projects</h1>
-  <ul class="posts">
-    <li><a href="http://github.com/github/gollum/">Gollum:</a> A simple, Git-powered wiki with a sweet API and local frontend.</li>
-  </ul>
+	<h1>Projects</h1>
+	<ul class="projects">
+		<li>Large-scale implementation of change detection algorithms </br>
+			<div> Employing the full power of cloud computation to detect changes in phenomena detected from satellite imagery.
+			</div>
+		</li> 
+		</br>
+		
+		<li>Economic analysis of natural resource management </br> 
+			<div> Econometric analysis to assess the economic determinants of resource consumption. An archetypal question is, "How do interest rates, set today, affect the rate of forest clearing activity in 8 months?"
+			</div>
+		</li> 
+		</br>
+		
+		<li>Predictive modeling of spatial processes </br>
+			<div> Econometric analysis to assess the economic determinants of resource consumption. An archetypal question is, "How do interest rates, set today, affect the rate of forest clearing activity in 8 months?"
+			</div>
+		</li> 
+		</br>
+		
+		<li>Mobile app development to disseminate real-time environmental information </br>
+			<div> Building an app on the Android platform that will alert users to monthly forest clearing activity in the humid tropics.  The app will be synched with the <a href="http://opendatakit.org/">Open Data Kit</a> project to allow for data collection.
+			</div>
+		</li> 
+		</br>
+	</ul>
+	
+	<h1>Recent Posts</h1>
+	<ul class="posts">
+	    {% for post in site.posts %}
+	      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+	    {% endfor %}
+	</ul>
 </div>
