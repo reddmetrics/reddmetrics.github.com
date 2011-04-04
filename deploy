@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+sshfs -C  jrohrer@www.threadlockdesign.com:/home/content/j/r/o/jrohrer/html/ ~/godaddy/
+jekyll && rsync -avz --delete _site/ ~/godaddy/
