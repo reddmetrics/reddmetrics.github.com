@@ -9,7 +9,7 @@ title: about us
 <div id="person">
 	<ul class="person">
 		<li><img src="/images/dan.png" height=120 width=120 align=left style="margin: 0px 10px 0px 0px;" /> 
-			<p><FONT COLOR="#a00">Dan Hammer</FONT> is, like, probably the coolest person I know.  He is handsome and pretty all at once - and oh-so-dreamy, too.  Dan is a founding member and research analyst at REDD Metrics, specializing in spatial econometrics and natural resource economics. His ultimate goal is to master the art of geriatrics while spinning plates.  Still, he is able to diffuse Rubiks bombs with his light and loose pinky fingers.  He is friends with Sam and Robin.  This is his greatest accomplishment.  At least until he learns how to spin plates.  Yessah! </p>
+			<p><FONT COLOR="#a00">Dan Hammer</FONT> (<a style="text-decoration:none" href="http://dl.dropbox.com/u/5365589/hammer-cv.pdf">CV</a>) is a founding member and research analyst at REDD Metrics, specializing in spatial statistics and natural resource economics.  Dan graduated from Swarthmore College in 2007 with high honors in mathematics and economics. He was a Lang Scholar and a Watson Fellow, and he passed the swim test with the grace of a cuttlefish.  Dan is now a researcher and consultant at Resource for the Future, the World Bank, and the Center for Global Development, while he completes a master's degree in geospatial information sciences from the University of Maryland.  Next year, he will begin a PhD in resource economics and another master's in statistics at UC Berkeley. </p>
 		</li> 
 		</br>
 		
