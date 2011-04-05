@@ -19,7 +19,7 @@ title: about us
 		</br>
 		
 		<li><img src="/images/robin.png" height=120 width=120 align=left style="margin: 0px 10px 0px 0px;" /> 
-			<p><FONT COLOR="#a00">Robin Kraft</FONT> can't compose in his head.  He needs to type out his bio. Are you transcribing what I'm saying?  Godammit, Dan, let me do this.  Robin wishes he could groove like Dan.  Move, Dan, I'm typing.  No, Robin likes Dan's pants.  Ok, fine, that's true.  Robin is a man of many talents, and is quick on the uptake on languages - programming or otherwise.  He studied International Development at Sciences Po in Paris and History at Berkeley.  He desperately wants to move back to the West Coast, where he will join Dan, Sam, and the rest of his immediate family. </p>
+			<p><FONT COLOR="#a00">Robin Kraft</FONT> is a founding member of REDD Metrics, specializing in spatial data processing and analysis in the cloud. He is a researcher and consultant at Resources for the Future, the World Bank and the Center for Global Development, but in a previous professional life was a travel writer in France and music magazine editor in San Francisco. He got his Masters in development economics at Sciences Po in Paris and a BA in history at UC Berkeley, and will soon complete a Masters in geography at University of Maryland.</p>
 		</li> 
 		</br>
 		
