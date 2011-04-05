@@ -6,7 +6,7 @@ title: REDD Metrics
 <div id="home">
 	
 	<div>
-	Founded in early 2011, REDD Metrics, LLC, is a group that applies innovations in large-scale spatial data processing to questions in environmental and resource economics.  This site is very new, and will be further developed in the coming months.  In the meantime, please feel free to find out a little more about us and our projects - and please subscribe to our blog, which will track our work in  economics and large-scale spatial processing.
+	Founded in early 2011, REDD Metrics, LLC, is a group that applies innovations in large-scale spatial data processing to questions in environmental and resource economics.  This site is very new, and will be further developed in the coming months.  In the meantime, please feel free to find out a little more about us and our projects - and please subscribe to our blog, which will track our work in  economics and large-scale spatial processing.  Sign up <a href="http://goo.gl/nrNs1">here</a> to for our intermittent e-mails.  
 	</div>
 	</br>
 
