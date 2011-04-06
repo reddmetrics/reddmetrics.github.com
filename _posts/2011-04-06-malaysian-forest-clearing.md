@@ -7,7 +7,7 @@ title: Malaysian Forest Clearing
 ================
 
 
-<p class="meta">04 April, 2011 - Dan Hammer</p>
+<p class="meta">06 April, 2011 - Dan Hammer</p>
 
 The New York Times recently reported on the rapid rate of peatland forest clearing in Northern Borneo. The [Green Blog](http://goo.gl/kq286) featured the incredible work of researchers at [SarVision](http://www.sarvision.nl/), who found that 33 percent of coastal peatland forest in the Malaysian state of Sarawak had been cleared since 2005.  We embedded the SarVision data in a Google Earth gadget below; and the raw data can be found [here](http://goo.gl/yQfQQ).  The green area is forest as of 2005; yellow, orange, and red areas indicate deforestation, 2005-2010.   This high spatial resolution data (approx. 50m resolution) is indispensable for the assessment of conservation efforts.
 </br>
