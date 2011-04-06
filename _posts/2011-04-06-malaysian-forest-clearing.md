@@ -6,7 +6,6 @@ title: Malaysian Forest Clearing
 {{ page.title }}
 ================
 
-
 <p class="meta">06 April, 2011 - Dan Hammer</p>
 
 The New York Times recently reported on the rapid rate of peatland forest clearing in Northern Borneo. The [Green Blog](http://goo.gl/kq286) featured the incredible work of researchers at [SarVision](http://www.sarvision.nl/), who found that 33 percent of coastal peatland forest in the Malaysian state of Sarawak had been cleared since 2005.  We embedded the SarVision data in a Google Earth gadget below; and the raw data can be found [here](http://goo.gl/yQfQQ).  The green area is forest as of 2005; yellow, orange, and red areas indicate deforestation, 2005-2010.   This high spatial resolution data (approx. 50m resolution) is indispensable for the assessment of conservation efforts.
@@ -22,7 +21,3 @@ The FORMA data are released as probabilities.  Each pixel is assigned a probabil
 We can use these data to examine the short-term spatial dynamics of forest clearing activity.  That is, we can begin to examine the economic drivers of deforestation, such as the price of oil palm or national interest rates.  This research will undoubtedly help to specify more effective conservation policy.  More on this research soon.
 
 <object width="589" height="480" id="player"><param name="movie" value="http://www.authorstream.com/player.swf?p=939674_634376370339997500&pt=3" /><param name="allowfullscreen" value="true" /><param name="allowScriptAccess" value="always"/><embed src="http://www.authorstream.com/player.swf?p=939674_634376370339997500&pt=3" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="589" height="480"></embed></object>
-
-<!-- <div><h3 style="padding: 0px; margin: 3px;"><a href="http://www.authorstream.com/Presentation/danhammer-939646-forma-sarawak/" target="_blank" style="font:normal 18px,arial;"></a></h3><object width="589" height="480" id="player"><param name="movie" value="http://www.authorstream.com/player.swf?p=939646_634376350539997500&pt=3" /><param name="allowfullscreen" value="true" /><param name="allowScriptAccess" value="always"/><embed src="http://www.authorstream.com/player.swf?p=939646_634376350539997500&pt=3" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="589" height="480"></embed></object><div  style="font-family: arial; font-style: normal; font-variant: normal; font-weight: normal;font-size: 11px; line-height: normal; font-size-adjust: none; font-stretch: normal;"> <a href="http://www.authorstream.com/" target="_blank"></a>  <a href="http://www.authorstream.com/User-Presentations/danhammer/" target="_blank"></a></div></div> -->
-
-<!-- <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/bXQMrbiP-3M?hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/bXQMrbiP-3M?hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="586" height="400"></embed></object> -->
