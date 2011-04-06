@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 sshfs -C  reddmetrics@www.reddmetrics.com:/home/content/75/7703375/html/ ~/godaddy/
-jekyll && rsync -avz --rsync-path=~/bin/rsync --delete _site/ reddmetrics@www.reddmetrics.com:~/html
-diskutil unmount force ~/godaddy
+jekyll && rsync -avz --delete _site/ ~/godaddy/
+diskutil unmount force ~/godaddy 
