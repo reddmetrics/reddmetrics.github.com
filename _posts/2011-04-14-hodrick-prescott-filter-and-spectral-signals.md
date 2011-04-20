@@ -36,10 +36,10 @@ filter works pretty well.
 
 The graph below displays the a pre-conditioned NDVI time-series for a
 1km x 1km tract of forested land in Indonesia between February 2000
-and December 2010.  We have already removed and interpolated
+and December 2010 [in blue].  We have already removed and interpolated
 "unreliable" values, as indicated by an associated MODIS measurement
 of the error from cloud cover (among other things). The H-P filter for
-this NDVI time-series is also plotted, with a smoothing parameter
+this NDVI time-series is also plotted [in red], with a smoothing parameter
 &#0955; = 50.  The &#0955; parameter reflects the filter's sensitivity
 to short-term variation in the NDVI.  As &#0955; increases, the
 filtered curve approaches the OLS regression line -- which is not at
@@ -47,7 +47,7 @@ all sensitive to short-term fluctuations in the time-series.  As
 &#0955; decreases, the filter approaches the original time-series; it
 is absolutely sensitive to short-term variation.
 
-<img src="http://dl.dropbox.com/u/5365589/hp-ndvi2.png" height="380"
+<img src="http://dl.dropbox.com/u/5365589/hp-ndvi8.png" height="380"
 width="591">
 
 There is no standard value for the smoothing parameter.  For
