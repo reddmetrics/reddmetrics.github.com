@@ -14,7 +14,7 @@ The [FORMA](http://www.cgdev.org/forest) project is a [Center for Global Develop
 
 The graph below displays the NDVI time-series (in blue) for a 1km x 1km tract of forested land in Indonesia between January 2000 and September 2010.  The red line tracks the filtered time-series, with a &#0955; parameter (temporal smoothing parameter) of 3.15.  This parameter determines the sensitivity to short-term variation in the original time-series.  As &#0955; increases, the filtered time-series approaches the ordinary least squares regression line (not at all sensitive to short term variation).  A &#0955; value of 0 will yield the original time-series (absolutely sensitive to short-term variation). 
 
-<img src="http://dl.dropbox.com/u/5365589/hp-ndvi.png" height="380" width="589">
+<img src="http://dl.dropbox.com/u/5365589/ndvi-filt.png" height="380" width="589">
 
 There is no standard value for the smoothing parameter, &#0955;.  For quarterly economic data, Hodrick and Prescott suggest a &#0955; value of 1600.  It is likely that the appropriate &#0955; value for this application is much smaller, and probably less than one.  But we don't have to choose <i>a priori</i>.  We are able to implement our [Clojure](http://clojure.org/) code (posted below) on a cloud computation platform.  Leveraging the full utility of mutable data structures, we can launch hundreds of virtual machines to apply hundreds of &#0955; values to billions (literally) of pixels at very low cost (in terms of both time and money).  We can then test to see which value is best suited to identifying forest clearing activity.  All in all, this smacks of non-parametrics.
 
