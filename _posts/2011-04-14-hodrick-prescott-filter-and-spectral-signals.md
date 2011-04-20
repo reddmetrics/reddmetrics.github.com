@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "spectral signals and the hodrick-prescott filter: a love story"
+title: "spectral signals and the hodrick-prescott filter"
 ---
 
 {{ page.title }}
@@ -32,7 +32,7 @@ stream, however, is subject to all sorts of problems, including
 idiosyncratic error due to (among other things) persistent cloud
 cover.  We are experimenting with different methods to smooth the
 time-series over anomalous observations, but we've found that the H-P
-filter works pretty well!
+filter works pretty well.
 
 The graph below displays the NDVI time-series (in blue) for a 1km x
 1km tract of forested land in Indonesia between January 2000 and

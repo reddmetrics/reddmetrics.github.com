@@ -32,8 +32,7 @@ Google Earth gadget.
 Sarawak data [<font
 color="0000FF">here</font>](http://dl.dropbox.com/u/5365589/sarawak-sarvision.png),
 if you do not wish to download the Google Earth Plug-In.</font>
-<script
-src="http://www.gmodules.com/ig/ifr?url=http://code.google.com/apis/kml/embed/embedkmlgadget.xml&amp;up_kml_url=http%3A%2F%2Fdl.dropbox.com%2Fu%2F5365589%2Fkml%2Ftmp.kml&amp;up_view_mode=earth&amp;up_earth_2d_fallback=0&amp;up_earth_fly_from_space=1&amp;up_earth_show_nav_controls=1&amp;up_earth_show_buildings=0&amp;up_earth_show_terrain=1&amp;up_earth_show_roads=1&amp;up_earth_show_borders=1&amp;up_earth_sphere=earth&amp;up_maps_zoom_out=0&amp;up_maps_default_type=satellite&amp;synd=open&amp;w=579&amp;h=400&amp;title=&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js"></script>
+<script src="http://www.gmodules.com/ig/ifr?url=http://code.google.com/apis/kml/embed/embedkmlgadget.xml&amp;up_kml_url=http%3A%2F%2Fdl.dropbox.com%2Fu%2F5365589%2Fkml%2Ftmp.kml&amp;up_view_mode=earth&amp;up_earth_2d_fallback=0&amp;up_earth_fly_from_space=1&amp;up_earth_show_nav_controls=1&amp;up_earth_show_buildings=0&amp;up_earth_show_terrain=1&amp;up_earth_show_roads=1&amp;up_earth_show_borders=1&amp;up_earth_sphere=earth&amp;up_maps_zoom_out=0&amp;up_maps_default_type=satellite&amp;synd=open&amp;w=579&amp;h=400&amp;title=&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js"></script>
 
 FORMA is now operational for the full tropics at 1km resolution, with
 planned improvements to 250m resolution.  We aimed the FORMA system at
@@ -44,7 +43,7 @@ below; the slides are available for download
 6.8MB).  
 
 The brown pixels indicate areas that had been cleared between 2000 and
-2005.  This data set ([Hansen, et al.](http://goo.gl/HqvCW)) serves as
+2005.  This data set ([Hansen, et al., 2008](http://goo.gl/HqvCW)) serves as
 our training data -- the measure of clearing activity that we use to
 calibrate our detection algorithms.  The yellow-to-red pixels that
 light up after Dec 2005 are FORMA estimates of clearing
@@ -69,3 +68,4 @@ currently working to better understand the economic drivers of
 deforestation through research on the formation of new clusters of
 deforestation.  And we are relying on FORMA to flag the formation of
 clusters at high temporal resolution.  More to come -- and soon!
+
