@@ -15,9 +15,8 @@ econometrics, Python, environmental policy, Clojure, cloud compuation, among
 others, while we develop new products that are intended to support
 environmental conservation.
 
-We will post product updates and compact data analysis; we will post
-code and the subsequent applications.  We're not a big group, we are
-all committed to making our work useful to other researchers or
-programmers.
+We will post code and applications, project updates and compact data
+analysis. We are not a big group, but we are all committed to making
+our work useful to other researchers or programmers.
 
 Thanks for visiting!  
