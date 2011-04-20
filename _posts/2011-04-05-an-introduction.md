@@ -17,6 +17,6 @@ environmental conservation.
 
 We will post code and applications, project updates and compact data
 analysis. We are not a big group, but we are all committed to making
-our work useful to other researchers or programmers.
+our work useful to other researchers or code hackers.
 
 Thanks for visiting!  

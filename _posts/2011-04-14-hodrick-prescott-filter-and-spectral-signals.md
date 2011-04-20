@@ -34,46 +34,42 @@ cover.  We are experimenting with different methods to smooth the
 time-series over anomalous observations, but we've found that the H-P
 filter works pretty well.
 
-The graph below displays the NDVI time-series (in blue) for a 1km x
-1km tract of forested land in Indonesia between January 2000 and
-September 2010.  The red line tracks the filtered time-series, with a
-&#0955; parameter (temporal smoothing parameter) of 3.15.  This
-parameter determines the sensitivity to short-term variation in the
-original time-series.  As &#0955; increases, the filtered time-series
-approaches the ordinary least squares regression line (not at all
-sensitive to short term variation).  A &#0955; value of 0 will yield
-the original time-series (absolutely sensitive to short-term
-variation).
+The graph below displays the a pre-conditioned NDVI time-series for a
+1km x 1km tract of forested land in Indonesia between February 2000
+and December 2010.  We have already removed and interpolated
+"unreliable" values, as indicated by an associated MODIS measurement
+of the error from cloud cover (among other things). The H-P filter for
+this NDVI time-series is also plotted, with a smoothing parameter
+&#0955; = 50.  The &#0955; parameter reflects the filter's sensitivity
+to short-term variation in the NDVI.  As &#0955; increases, the
+filtered curve approaches the OLS regression line -- which is not at
+all sensitive to short-term fluctuations in the time-series.  As
+&#0955; decreases, the filter approaches the original time-series; it
+is absolutely sensitive to short-term variation.
 
-<img src="http://dl.dropbox.com/u/5365589/ndvi-filt.png" height="380"
-width="589">
+<img src="http://dl.dropbox.com/u/5365589/hp-ndvi2.png" height="380"
+width="591">
 
-There is no standard value for the smoothing parameter, &#0955;.  For
+There is no standard value for the smoothing parameter.  For
 quarterly economic data, Hodrick and Prescott suggest a &#0955; value
-of 1600.  It is likely that the appropriate &#0955; value for this
-application is much smaller, and probably less than one.  But we don't
-have to choose <i>a priori</i>.  We are able to implement our
-[Clojure](http://clojure.org/) code (posted below) on a cloud
-computation platform.  Leveraging the full utility of mutable data
-structures, we can launch hundreds of virtual machines to apply
-hundreds of &#0955; values to billions (literally) of pixels at very
-low cost (in terms of both time and money).  We can then test to see
-which value is best suited to identifying forest clearing activity.
-All in all, this smacks of non-parametrics.
+of 1600.  We apply our change detection algorithms to the filtered
+NDVI series associated with many values of &#0955; in order to
+identify the point at which there is a persistent and significant
+decline in the vegetation index.  For this particular pixel, displayed
+above, this point is around mid-2008.  
 
-The value of the H-P filter may not be readily apparent.  There is a
-lot of noise in the time-series graph; the actual signal is almost
-indistinguishable.  Still, the pattern observed from mid-2008 onward
-is indicative of clearing activity.  Without the veritable battery of
-smoothing and quality control algorithms that we apply to precondition
-the time-series, our subsequent change detection algorithms would have
-missed the slow-ish decline in vegetation.
+We are currently porting the entire FORMA system to
+[Clojure](http://clojure.org/), a very elegant Lisp that allows us to
+efficiently implement our algorithms on a cloud computation platform.
+We therefore don't have to choose a &#0955; value <i>a priori</i> but
+instead apply thousands of smoothing parameters to the data,
+incorporating only the derived information that best represents the
+signals from forest clearing activity.
 
-I am relatively new to Clojure.  I wasn't able to find an
-implementation of the H-P filter in Clojure, and so I wrote and posted
-the following code -- with very helpful suggestions from the other
-members of the team.  Hopefully, this will save some people time; and
-any suggestions or comments would be greatly appreciated.
+I wasn't able to find a pre-written H-P filter in Clojure, so I wrote
+my own.  I am relatively new to Clojure; so, Clojure hackers, please feel free
+to tear this code apart.  Or, better yet, gently explain how to clean it
+up. I hope that this will save one or two people some time down the line.
 
 {% highlight clojure %}
 ;; Hodrick-Prescott filter
@@ -104,7 +100,7 @@ any suggestions or comments would be greatly appreciated.
         inner (for [x (range (inc (- T 5)))]
                    (insert-into-zeros x T [1 -4 6 -4 1]))]
     (matrix
-     (concat [first-row]
+      (concat [first-row]
              [second-row]
              inner
              [(reverse second-row)]
@@ -114,8 +110,10 @@ any suggestions or comments would be greatly appreciated.
   "return a smoothed time-series, given the HP filter parameter."
   [ts lambda]
   (let [T (count ts)
-        coeff-matrix (mult lambda (hp-mat T))
-        trend-cond (solve (plus coeff-matrix (identity-matrix T)))]
+        trend-cond (solve 
+                     (plus 
+                       (mult lambda (hp-mat T))
+                       (identity-matrix T)))]
     (mmult trend-cond ts)))
 
 {% endhighlight %}
