@@ -53,7 +53,7 @@ month.  Yellow pixels indicate areas with low signals of clearing
 activity -- but still sufficiently high to exceed our confidence
 threshold.  Red pixels represent areas with strong signals.  
 
-<object width="589" height="480" id="player"><param name="movie" value="http://www.authorstream.com/player.swf?p=939657_634376360139997500&pt=3" /><param name="allowfullscreen" value="true" /><param name="allowScriptAccess" value="always"/><embed src="http://www.authorstream.com/player.swf?p=939657_634376360139997500&pt=3" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="589" height="480"></embed></object>
+<object width="589" height="480" id="player"><param name="movie" value="http://www.authorstream.com/player.swf?n=1&c=#dfdfdf&r=0&l=0&p=939657_634376360139997500&pt=3" /><param name="allowfullscreen" value="true" /><param name="allowScriptAccess" value="always"/><embed src="http://www.authorstream.com/player.swf?n=1&c=#dfdfdf&r=0&l=0&p=939657_634376360139997500&pt=3" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="589" height="480"></embed></object>
 
 We can now use these data to examine the short-term spatial dynamics
 of deforestation.  For example, most of the clearing activity in this
