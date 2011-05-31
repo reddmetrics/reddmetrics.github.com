@@ -13,7 +13,7 @@ title: about us
 		</br>
 		
 		<li><img src="/images/darius.jpg" height=120 width=120 align=left style="margin: 0px 10px 0px 0px;" /> 
-			<p><FONT COLOR="#a00">Darius Nassiry</FONT> is a founding member of REDD Metrics, where he guides business development, and is visiting fellow at the Center for Global Development, where he focuses on climate finance. Previously, Darius served as a Director at the Millennium Challenge Corporation (MCC), where he led teams responsible for MCC investments in Asia and launched MCC’s climate change initiative. His experience includes corporate finance and M&A positions in energy and utilities in New York, London, and Tokyo. Earlier in his career, he served as a Foreign Service Officer in Mexico and Kenya. He received a Bachelors degree from Carleton College and a Masters in Public Administration from Princeton University. He is currently based in Oslo, Norway.</p>
+			<p><FONT COLOR="#a00">Darius Nassiry</FONT> is a founding member of REDD Metrics, where he guides business development, and is visiting fellow at the Center for Global Development, where he focuses on climate finance. Previously, Darius served as a Director at the Millennium Challenge Corporation (MCC), where he led teams responsible for MCC investments in Asia and launched MCC’s climate change initiative. His experience includes corporate finance and M&A positions in energy and utilities in New York, London, and Tokyo. Earlier in his career, he served as a Foreign Service Officer in Mexico and Kenya. He received a Bachelors degree from Carleton College, and a Masters in Public Administration from Princeton University. He is currently based in Oslo, Norway.</p>
 		</li> 
 		</br>
 		
