@@ -9,9 +9,9 @@ title: "forest monitoring - there's an app for that (coming soon)"
 
 <p class="meta">13 July, 2011 - Robin Kraft</p>
 
-The FORMA team (part of which is also part of REDD Metrics) has been working hard these last few years to generate and share rapidly updated data on forest clearing for dozens of countries in the humid tropics. We've tried graphs, cool animated Powerpoint presentations \([example](http://www.reddmetrics.com/2011/04/06/malaysian-forest-clearing.html)\), and the like, but as any data junkie knows, raw datasets usually do not provide immediately actionable information. So instead of just dumping geotiffs on a server, emailing our friends a huge time series dataset, or setting up a fancy GIS server, we're going mobile!
+The team behind [FORMA](http://www.cgdev.org/forma) (some members of which also founded REDD Metrics) has been working hard to generate and share rapidly updated data on forest clearing for dozens of countries in the humid tropics. We've tried graphs, cool animated Powerpoint presentations \([example](http://www.reddmetrics.com/2011/04/06/malaysian-forest-clearing.html)\), and the like, but as any data junkie knows, raw datasets usually do not provide immediately actionable information. So as we prepare a major update to the FORMA data, instead of just dumping geotiffs on a server, emailing our friends a huge time series dataset, or setting up a fancy GIS server, we're going mobile!
 
-That is, thanks to support from the World Bank's Innovation Fund we're readying a simple mobile app to allow technical and non-technical users alike to query and visualize the latest FORMA data (Android/iPhone/desktop), and collect field data in response (Android 2.3+ only). We'll of course provide raw data for our data junkie brothers and sisters, but for this post let's stick to screenshots and smartphones. We'll put up a link to the app itself once we've finished prepping data.
+That is, thanks to support from the World Bank's Innovation Fund we're readying a simple mobile app to allow technical and non-technical users alike to query and visualize the latest FORMA data (Android/iPhone/desktop), and collect field data in response (Android 2.3+ only). We'll of course provide raw data for our data junkie brothers and sisters, but for this post let's stick to screenshots and smartphones. We'll put up a link to the app itself once the data are ready later this summer.
 
 ###Background
 
@@ -27,7 +27,7 @@ It's pretty basic functionality, but it allows you to explore the data with noth
 
 ###Data collection
 
-Using Open Data Kit (ODK), we've set up an online repository for field data collected on the ground using Android phones and the ODK Collect app. This works offline, so there's no need to have a 3G connection in the jungle! Using a simple survey (see below), we hope to work with local partners to collect data on what is actually happening on the ground in forests across the tropics, instead of just publishing alerts that represent whatever we can discern from space. This repository will be open to anyone who wants to use the field data, which will hopefully help limit redundant data collection. After all, we're not the only ones who want to collect and use ground-truth data!
+Using Open Data Kit (ODK), we've set up an online repository for field data collected on the ground using Android phones and the ODK Collect app. This works offline, so there's no need to have a 3G connection in the jungle! Using a simple survey (see below), we hope to work with local partners to collect data on what is actually happening on the ground in forests across the tropics, instead of just publishing alerts that represent whatever we can discern from space. This repository will be open to anyone who wants to use the field data, which will hopefully help limit redundant data collection. After all, we're not the only ones who want to collect and use ground-verified data!
 
 <center>
 <img src="http://dl.dropbox.com/u/5365589/robinspost/collect.png" height="320"> <img src="http://dl.dropbox.com/u/5365589/robinspost/pic.png" height="320">
