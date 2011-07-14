@@ -6,7 +6,7 @@ title: malaysian forest clearing
 {{ page.title }}
 ================
 
-<p class="meta">06 April, 2011 - Dan Hammer</p>
+<p class="meta">06 July, 2011 - Dan Hammer</p>
 
 We are currently working to refine a forest monitoring tool originally
 developed at the Center for Global Development.  The tool, called

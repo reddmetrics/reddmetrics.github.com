@@ -6,7 +6,7 @@ title: "spectral signals and the hodrick-prescott filter"
 {{ page.title }}
 ================
 
-<p class="meta">14 April, 2011 - Dan Hammer</p>
+<p class="meta">08 July, 2011 - Dan Hammer</p>
 
 The [Hodrick-Prescott filter](http://goo.gl/ljyWA) is commonly used to
 parse cyclical behavior from an economic time-series.  Instead, we
@@ -67,9 +67,8 @@ incorporating only the derived information that best represents the
 signals from forest clearing activity.
 
 I wasn't able to find a pre-written H-P filter in Clojure, so I wrote
-my own.  I am relatively new to Clojure; so, Clojure hackers, please feel free
-to tear this code apart.  Or, better yet, gently explain how to clean it
-up. I hope that this will save one or two people some time down the line.
+my own.  I am relatively new to Clojure; and so,  please feel free
+to tear this code apart.  
 
 {% highlight clojure %}
 ;; Hodrick-Prescott filter
