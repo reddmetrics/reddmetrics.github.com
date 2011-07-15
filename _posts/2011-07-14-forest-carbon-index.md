@@ -13,7 +13,7 @@ Robin and I have just completed a year-long contract with [Resources for the Fut
 
 <center><img src="/images/fci.png" height="340" width="588"></center>
 
-**Our task** was to build a new computational platform for the FCI, so that it could be quickly and easily regenerated with new parameters and base datasets (as they become available).  The intellectual legwork for the FCI had already been done and published; and so our task was to revamp the generating process, so that it could be updated and shared with other researchers.  Basically, this meant getting rid of ArcGIS -- going open-source -- which is now more feasible than ever. There is a large and growing set of open-source tools for spatial analysis, especially in Python and R.  We rebuilt the FCI in Python, and are analyzing the results in R.
+**Our task** was to build a new computational platform for the FCI, so that it could be quickly and easily regenerated with new parameters and base datasets (as they become available).  The intellectual legwork for the FCI had already been done and [published](http://www.forestcarbonindex.org/summary.html); and so our task was to revamp the generating process, so that it could be updated and shared with other researchers.  Basically, this meant getting rid of ArcGIS -- going open-source -- which is now more feasible than ever. There is a large and growing set of open-source tools for spatial analysis, especially in Python and R.  We rebuilt the FCI in Python, and are analyzing the results in R.
 
 <img src="/images/fcipanel.png" height="265" align="right">
 
