@@ -20,7 +20,7 @@ def dostata(dofile, *params):
     cmd = ["stata", "do", dofile]
     for param in params:
         cmd.append(param)
-    subprocess.call(cmd) 
+    return subprocess.call(cmd) 
 
 {% endhighlight %}
 
