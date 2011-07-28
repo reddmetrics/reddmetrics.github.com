@@ -8,7 +8,7 @@ title: about us
 <div id="person">
 	<ul class="person">
 		<li><img src="/images/dan.png" height=120 width=120 align=left style="margin: 0px 10px 0px 0px;" /> 
-			<p><FONT COLOR="#a00">Dan Hammer</FONT> is a founding member and research analyst at REDD Metrics, specializing in spatial statistics and natural resource economics.  Dan graduated from Swarthmore College in 2007 with high honors in economics and mathematics. He was a Lang Scholar and a Watson Fellow, and he passed the swim test with the grace of a cuttlefish.  Dan is now a Research Fellow at the World Resources Institute, working toward a  master's candidate in geospatial information sciences at the University of Maryland and a PhD in resource economics at UC Berkeley.
+			<p><FONT COLOR="#a00">Dan Hammer</FONT> is a founding member and research analyst at REDD Metrics, specializing in spatial statistics and natural resource economics.  Dan graduated from Swarthmore College in 2007 with high honors in economics and mathematics. He was a Lang Scholar and a Watson Fellow, and he passed the swim test with the grace of a cuttlefish.  Dan is now a Research Fellow at the World Resources Institute, working toward a master's degree in geospatial information sciences at the University of Maryland and a PhD in resource economics at UC Berkeley.
 		</li> 
 		</br>
 		
