@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "economic determinants of forest clearing activity"
+title: "The economic determinants of forest clearing activity"
 ---
 
 {{ page.title }}

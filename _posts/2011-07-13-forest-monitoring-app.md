@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "forest monitoring - there's an app for that (coming soon)"
+title: "Forest monitoring - there's an app for that (coming soon)"
 ---
 
 {{ page.title }}

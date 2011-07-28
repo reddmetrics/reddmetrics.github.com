@@ -1,6 +1,6 @@
 ---
 layout: post
-title: malaysian forest clearing
+title: Malaysian forest clearing
 ---
 
 {{ page.title }}

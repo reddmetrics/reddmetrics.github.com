@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "an introduction"
+title: "An introduction"
 ---
 
 {{ page.title }}

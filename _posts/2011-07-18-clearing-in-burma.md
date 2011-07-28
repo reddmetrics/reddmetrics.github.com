@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "what in the forest's name is going on in Burma?"
+title: "What in the forest's name is going on in Burma?"
 ---
 
 {{ page.title }}

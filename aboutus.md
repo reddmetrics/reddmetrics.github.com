@@ -8,12 +8,12 @@ title: about us
 <div id="person">
 	<ul class="person">
 		<li><img src="/images/dan.png" height=120 width=120 align=left style="margin: 0px 10px 0px 0px;" /> 
-			<p><FONT COLOR="#a00">Dan Hammer</FONT> is a founding member and research analyst at REDD Metrics, specializing in spatial statistics and natural resource economics.  Dan graduated from Swarthmore College in 2007 with high honors in economics and mathematics. He was a Lang Scholar and a Watson Fellow, and he passed the swim test with the grace of a cuttlefish.  Dan is now a researcher and consultant at Resources for the Future, the World Bank, and the Center for Global Development, while he completes a master's degree in geospatial information sciences from the University of Maryland.  This fall, he will begin a PhD in resource economics at UC Berkeley. </p>
+			<p><FONT COLOR="#a00">Dan Hammer</FONT> is a founding member and research analyst at REDD Metrics, specializing in spatial statistics and natural resource economics.  Dan graduated from Swarthmore College in 2007 with high honors in economics and mathematics. He was a Lang Scholar and a Watson Fellow, and he passed the swim test with the grace of a cuttlefish.  Dan is now a Research Fellow at the World Resources Institute, working toward a  master's candidate in geospatial information sciences at the University of Maryland and a PhD in resource economics at UC Berkeley.
 		</li> 
 		</br>
 		
 		<li><img src="/images/darius.jpg" height=120 width=120 align=left style="margin: 0px 10px 0px 0px;" /> 
-			<p><FONT COLOR="#a00">Darius Nassiry</FONT> is a founding member of REDD Metrics, where he guides business development, and is visiting fellow at the Center for Global Development, where he focuses on climate finance. Previously, Darius served as a Director at the Millennium Challenge Corporation (MCC), where he led teams responsible for MCC investments in Asia and launched MCC’s climate change initiative. His experience includes corporate finance and M&A positions in energy and utilities in New York, London, and Tokyo. Earlier in his career, he served as a Foreign Service Officer in Mexico and Kenya. He received a Bachelors degree from Carleton College, and a Masters in Public Administration from Princeton University. He is currently based in Oslo, Norway.</p>
+			<p><FONT COLOR="#a00">Darius Nassiry</FONT> is a founding member of REDD Metrics.  He is a visiting fellow at the Center for Global Development and previously served as a Director at the Millennium Challenge Corporation (MCC), where he led teams responsible for investment programs in Asia and launched MCC’s climate change initiative. His prior experience includes investment banking positions in New York, London and Tokyo and as a Foreign Service Officer in Mexico and Kenya. He graduated from Carleton College and received a Masters in Public Affairs degree from Princeton University.
 		</li> 
 		</br>
 		

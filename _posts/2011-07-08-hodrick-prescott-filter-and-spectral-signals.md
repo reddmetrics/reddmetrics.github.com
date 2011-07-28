@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "spectral signals and the hodrick-prescott filter"
+title: "Spectral signals and the hodrick-prescott filter"
 ---
 
 {{ page.title }}

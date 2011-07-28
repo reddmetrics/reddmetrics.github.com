@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "calling stata from python"
+title: "Calling stata from python"
 ---
 
 {{ page.title }}

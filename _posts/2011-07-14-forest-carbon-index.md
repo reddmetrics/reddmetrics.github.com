@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "forest carbon index"
+title: "Forest Carbon Index"
 ---
 
 {{ page.title }}
