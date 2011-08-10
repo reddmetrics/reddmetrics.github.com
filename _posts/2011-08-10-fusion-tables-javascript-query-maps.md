@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How To: Add markers to a map using Fusion Tables"
+title: "Build your own map using Fusion Tables and Javascript"
 ---
 
 {{ page.title }}
@@ -9,7 +9,7 @@ title: "How To: Add markers to a map using Fusion Tables"
 
 <p class="meta">10 August, 2011 - Robin Kraft</p>
 
-In developing the mobile app [described in an earlier blogpost](http://www.reddmetrics.com/2011/07/13/forest-monitoring-app.html), I learned a lot about using Javascript and [Google Fusion Tables](http://www.google.com/fusiontables). So in this post, I'm going to show how to use [jQuery](http://www.jquery.com)'s <code>$.get</code> function to query a specific table and add the result to a map, as shown here.
+In developing the mobile app [described in an earlier blogpost](http://www.reddmetrics.com/2011/07/13/forest-monitoring-app.html), I learned a lot about using Javascript and [Google Fusion Tables](http://www.google.com/fusiontables), Google's handy data publishing and visualization tool. So in this post, I'm going to show how to use [jQuery](http://www.jquery.com)'s <code>$.get</code> function to query a specific table and add the result to a map, as shown here.
 
 <div id="map_canvas" style="height: 300px;">
     <!-- map loads here... -->
@@ -24,7 +24,6 @@ In developing the mobile app [described in an earlier blogpost](http://www.reddm
 
 Things to keep in mind:
 <ol>
-<li>I'm new to Javascript and programming for the web, so my understanding of whys and wherefores may not be satisfying to the more seasoned developers among you.</li>
 <li>I'll be using this query throughout this post:
 {% highlight sql %}
 SELECT p201012, lat, lon FROM 1043910 LIMIT 100
@@ -32,12 +31,12 @@ SELECT p201012, lat, lon FROM 1043910 LIMIT 100
 <li>For the curious, this query retrieves the first hundred records from table 1043910, which contains data on forest clearing activity in Indonesia generated using satellite data and the <a href="http://www.cgdev.org/forma">FORMA</a> algorithm. <code>p201012</code> refers to the probability (0-100) of clearing as of December 2010 (we're up to June 2011 now, but it's not in the table).</li>
 <li>One row returned by that query looks like this (probability, lat, lon):
 <code>68,-7.870833,129.6253</code></li>
-<li>The Javascript code running that map is available in <a href="../../../../js/ft_js_maps.js">ft_js_maps.js</a></li>
+<li>The Javascript code driving the map is available in <a href="../../../../js/ft_js_maps.js">ft_js_maps.js</a></li>
 </ol>
 <br />
 ###Background on single origin policy and JSONP
 
-For a Javascript newbie like me it was not entirely straightforward why I couldn't just use a standard Fusion Tables URL [like this one](http://www.google.com/fusiontables/api/query?sql=SELECT%20p201012,%20lat,%20lon%20FROM%201043910%20LIMIT%20100) to get data into a Javascript program. That gives you a comma-separated datafile, which you could easily parse using Javascript. However, [for security reasons](http://en.wikipedia.org/wiki/Same_origin_policy), a Javascript program can only retrieve documents or scripts - or data, in this case - stored on the same domain. The key exception to this rule is the mighty [JSONP](http://en.wikipedia.org/wiki/JSONP) object.
+For a Javascript newbie like me it was not entirely straightforward why I couldn't just use a standard Fusion Tables URL [like this one](http://www.google.com/fusiontables/api/query?sql=SELECT%20p201012,%20lat,%20lon%20FROM%201043910%20LIMIT%20100) to get data into a Javascript program. That query returns a comma-separated datafile, which you could easily parse using Javascript. However, [for security reasons](http://en.wikipedia.org/wiki/Same_origin_policy), a Javascript program can only retrieve documents or scripts - or data, in this case - stored on the same domain. The key exception to this rule is the mighty [JSONP](http://en.wikipedia.org/wiki/JSONP) object.
 
 No idea what JSONP means, or why this exception exists? No problem! All you have to know is that there's an [undocumented](https://groups.google.com/forum/#!topic/fusion-tables-users-group/TGDzExKymoI/discussion
 ) JSON API for getting a JSONP object back from a <code>GET</code> request. As far as I can tell, this is the only way to use Javascript to retrieve and manipulate raw data stored in Fusion Tables. But this isn't a big deal - to query a table you just need to add <code>&jsonCallback=?</code> to the end of the URL (see <code>queryUrlTail</code> below).
