@@ -23,7 +23,7 @@ title: about us
 		</br>
 		
 		<li><img src="/images/sam.png" height=120 width=120 align=left style="margin: 0px 10px 0px 0px;" /> 
-			<p><FONT COLOR="#a00">Sam Ritchie</FONT> is a founding member and the lead developer at REDD Metrics, where he explores the mysteries of large scale data analysis. Sam graduated from Princeton University in 2009 with a degree in mechanical and aerospace engineering; he spent a year on the Partnerships team of TED Conferences, LLC before moving on to pursue software design full time. He currently develops and manages a suite of highly successful brainteasers for the iPhone and iPad.</p>
+			<p><FONT COLOR="#a00">Sam Ritchie</FONT> is a founding member and the lead developer at REDD Metrics, where he explores the mysteries of large scale data analysis. Sam graduated from Princeton University in 2009 with a degree in mechanical and aerospace engineering; he spent a year on the Partnerships team of TED Conferences, LLC before moving on to pursue software design full time. He is currently an engineer at Twitter, working on a realtime, distributed data processing tool called Storm.</p>
 		</li> 
 		</br>
 	</ul>
