@@ -39,11 +39,11 @@ SELECT p201012, lat, lon FROM 1043910 LIMIT 100
 For a Javascript newbie like me it was not entirely straightforward why I couldn't just use a standard Fusion Tables URL [like this one](http://www.google.com/fusiontables/api/query?sql=SELECT%20p201012,%20lat,%20lon%20FROM%201043910%20LIMIT%20100) to get data into a Javascript program. That query returns a comma-separated datafile, which you could easily parse using Javascript. However, [for security reasons](http://en.wikipedia.org/wiki/Same_origin_policy), a Javascript program can only retrieve documents or scripts - or data, in this case - stored on the same domain. The key exception to this rule is the mighty [JSONP](http://en.wikipedia.org/wiki/JSONP) object.
 
 No idea what JSONP means, or why this exception exists? No problem! All you have to know is that Fusion Tables provides an [undocumented](https://groups.google.com/forum/#!topic/fusion-tables-users-group/TGDzExKymoI/discussion
-) JSON API for getting a JSONP object back from a <code>GET</code> request. As far as I can tell, this is the only way to use Javascript to retrieve and manipulate raw data stored in Fusion Tables. But this isn't a big deal - to query a table you just need to add <code>&jsonCallback=?</code> to the end of the URL (see <code>queryUrlTail</code> below).
+) JSON API for getting a JSONP object back from a <code>GET</code> request. As far as I can tell, this is the only way to use Javascript to retrieve and manipulate raw data stored in Fusion Tables. But this means it's actually easy to query a table with Javascript - you just need to add <code>&jsonCallback=?</code> to the end of the URL used with the jQuery <code>$.get</code> function (see <code>queryUrlTail</code> below).
 
 ###Getting data
 
-Let's assume your data and query are all set, and you're ready to get data. Here's what your query function might look like.
+Let's assume your data and query are all set, and you're ready to retrieve some data. Here's what your query function might look like:
 
 {% highlight javascript %}
 function getData(table) {
@@ -60,25 +60,25 @@ function getData(table) {
 }
 {% endhighlight %}
 
-The key is the last line. Without the third <code>jsonp</code> parameter, jQuery's <code>$.get</code> function will throw a cross-domain error.
+That last line is key. Without the third parameter, jQuery's <code>$.get</code> function will throw a cross-domain error:
 
 {% highlight javascript %}
 XMLHttpRequest cannot load [YOUR QUERY URL HERE]. Origin [SOME ORIGIN] is not
 allowed by Access-Control-Allow-Origin.
 {% endhighlight %}
 
-So be sure to include <code>jsonp</code> as that third parameter. If all goes well, you'll get something like this.
+So be sure to include <code>jsonp</code> as that third parameter. If all goes well, you'll get something like this:
 
 {% highlight javascript %}
 jQuery16109070935510098934_1312998050216({"table":{"cols":["p201012","lat","lon"],
 "rows":[[32,-7.829167,131.2274],[25,-7.854167,131.3026],[29,-7.904167,131.2679]]}})
 {% endhighlight %}
 
-You should know that Google [recently changed](http://groups.google.com/group/fusion-tables-users-group/browse_thread/thread/b909820434b5c191) how browsers interpret data from Fusion Tables, so although the returned data is actually JSON, your browser will think it's a CSV file. At the time of writing, [you could still safely ignore this](http://code.google.com/p/fusion-tables/issues/detail?id=118#c12).
+It may be helpful to know that Google [recently changed](http://groups.google.com/group/fusion-tables-users-group/browse_thread/thread/b909820434b5c191) how browsers interpret data from Fusion Tables. So although the returned data is actually JSON, your browser will think it's a CSV file. At the time of writing, [you could still safely ignore this](http://code.google.com/p/fusion-tables/issues/detail?id=118#c12) and assume you're getting JSON back from Fusion Tables.
 
 ###Creating markers from data
 
-Now that we've got some data, let's add it to a map using this <code>dataHandler</code> function. The only details of note is that for a JSON data object <code>d</code> the rows of data are actually stored in <code>d.table.rows</code>. Loop through that array and create a new marker for each "row". Creating the markers uses the standard Google Maps code you already know.
+Now that we've got some data, let's add it to a map using the <code>dataHandler</code> function below. The only detail I want to point out is that for a JSON data object <code>d</code> the rows of data are actually stored in <code>d.table.rows</code>, as you might expect given the structure of the JSON object above. You then loop through the <code>rows</code> array and create a new marker for each "row", using the standard Google Maps code you already know.
 
 {% highlight javascript %}
 function dataHandler(d) {
@@ -101,7 +101,7 @@ function dataHandler(d) {
 }
 {% endhighlight %}
 
-Note that I'm storing bits of data from the query inside the marker instance. Yes, you can add arbitrary attributes! These will be accessible to the infoWindow activated by the listener. This really comes in handy, as we'll see with <code>markerClick</code> below.
+Note that I'm storing bits of data from the query inside the marker instance. Yes, you can add arbitrary attributes to Javascript objects! Am I the only one who didn't know that? Anyway, these custom attributes will be accessible to the infoWindow object activated by the listener. This comes in handy if you need to build an infoWindow from scratch using data from your query:
 
 {% highlight javascript %}
 function markerClick(map, m, ifw) {
