@@ -38,7 +38,7 @@ SELECT p201012, lat, lon FROM 1043910 LIMIT 100
 
 For a Javascript newbie like me it was not entirely straightforward why I couldn't just use a standard Fusion Tables URL [like this one](http://www.google.com/fusiontables/api/query?sql=SELECT%20p201012,%20lat,%20lon%20FROM%201043910%20LIMIT%20100) to get data into a Javascript program. That query returns a comma-separated datafile, which you could easily parse using Javascript. However, [for security reasons](http://en.wikipedia.org/wiki/Same_origin_policy), a Javascript program can only retrieve documents or scripts - or data, in this case - stored on the same domain. The key exception to this rule is the mighty [JSONP](http://en.wikipedia.org/wiki/JSONP) object.
 
-No idea what JSONP means, or why this exception exists? No problem! All you have to know is that there's an [undocumented](https://groups.google.com/forum/#!topic/fusion-tables-users-group/TGDzExKymoI/discussion
+No idea what JSONP means, or why this exception exists? No problem! All you have to know is that Fusion Tables provides an [undocumented](https://groups.google.com/forum/#!topic/fusion-tables-users-group/TGDzExKymoI/discussion
 ) JSON API for getting a JSONP object back from a <code>GET</code> request. As far as I can tell, this is the only way to use Javascript to retrieve and manipulate raw data stored in Fusion Tables. But this isn't a big deal - to query a table you just need to add <code>&jsonCallback=?</code> to the end of the URL (see <code>queryUrlTail</code> below).
 
 ###Getting data
