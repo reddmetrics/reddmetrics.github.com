@@ -11,7 +11,7 @@ title: "Build your own map using Fusion Tables and Javascript"
 
 In developing the mobile app [described in an earlier blogpost](http://www.reddmetrics.com/2011/07/13/forest-monitoring-app.html), I learned a lot about using Javascript and [Google Fusion Tables](http://www.google.com/fusiontables), Google's handy data publishing and visualization tool. So in this post, I'm going to show how to use [jQuery](http://www.jquery.com)'s <code>$.get</code> function to query a specific table and add the result to a map, as shown here.
 
-\[Update: Check out the comments for an explanation about why you might want to do this.\]
+\[Update: Check out the [comments](#disqus_thread) for an explanation about why you might want to do this.\]
 
 <div id="map_canvas" style="height: 300px;">
     <!-- map loads here... -->
