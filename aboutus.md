@@ -18,7 +18,7 @@ title: about us
 		</br>
 		
 		<li><img src="/images/robin.png" height=120 width=120 align=left style="margin: 0px 10px 0px 0px;" /> 
-			<p><FONT COLOR="#a00">Robin Kraft</FONT> is a founding member of REDD Metrics, specializing in spatial data processing and analysis in the cloud. He is a research associate at World Resources Institute and research consultant at the World Bank. He has consulted at Resources for the Future and worked on [FORMA](http://www.cgdev.org/forma) with Dan at the Center for Global Development. In a previous professional life Robin was a travel writer in France and music magazine editor in San Francisco. He got his Masters in development economics at Sciences Po in Paris and a BA in history at UC Berkeley, and will soon complete a Masters in geography at University of Maryland.</p>
+			<p><FONT COLOR="#a00">Robin Kraft</FONT> is a founding member of REDD Metrics, specializing in spatial data processing and analysis in the cloud. He is a Research Associate at World Resources Institute, and has consulted at the World Bank and Resources for the Future since leaving the Center for Global Development in 2010. In a previous professional life Robin was a travel writer in France and music magazine editor in San Francisco. He got his Masters in development economics at Sciences Po in Paris and a BA in history at UC Berkeley, and will soon complete a Masters in geography at University of Maryland.</p>
 		</li> 
 		</br>
 		
