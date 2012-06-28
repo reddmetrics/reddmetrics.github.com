@@ -28,7 +28,7 @@ identify where and when forest clearing activity is occurring.  The
 Normalized Difference Vegetation Index
 ([NDVI](http://www.glcf.umd.edu/data/ndvi/)) is closely correlated
 with the health and density of terrestrial vegetation.  The NDVI data
-stream, however, is subject to all sorts of problems, including
+stream, however, is subject to all sorts of problems, includign
 idiosyncratic error due to (among other things) persistent cloud
 cover.  We are experimenting with different methods to smooth the
 time-series over anomalous observations, but we've found that the H-P
