@@ -7,7 +7,7 @@ title: about us
 ================
 <div id="person">
 	<ul class="person">
-		<li><img src="/images/dan.png" height=120 width=120 align=left style="margin: 0px 10px 0px 0px;" /> 
+		<li><img src="/images/dan.jpg" height=120 width=120 align=left style="margin: 0px 10px 0px 0px;" /> 
 			<p><FONT COLOR="#a00">Dan Hammer</FONT> is a founding member of REDD Metrics, specializing in spatial statistics and natural resource economics.  Dan graduated from Swarthmore College with high honors in economics and mathematics. He was a Lang Scholar and a Watson Fellow, and he passed the swim test with the grace of a cuttlefish.  Dan is now a Research Fellow at the World Resources Institute, working toward a Master's degree in geospatial information sciences at the University of Maryland, along with a Masters in Statistics and a PhD in resource economics at UC Berkeley.
 		</li> 
 		</br>
@@ -22,7 +22,7 @@ title: about us
 		</li> 
 		</br>
 		
-		<li><img src="/images/sam.png" height=120 width=120 align=left style="margin: 0px 10px 0px 0px;" /> 
+		<li><img src="/images/samface.jpg" height=120 width=120 align=left style="margin: 0px 10px 0px 0px;" /> 
 			<p><FONT COLOR="#a00">Sam Ritchie</FONT> is a founding member and lead developer at REDD Metrics, where he explores the mysteries of large scale data analysis. Sam graduated from Princeton University in 2009 with a degree in mechanical and aerospace engineering; he spent a year on the Partnerships team of TED Conferences, LLC before moving on to pursue software design full time. He is currently an engineer at Twitter, working on a realtime, distributed data processing tool called Storm.</p>
 		</li> 
 		</br>
