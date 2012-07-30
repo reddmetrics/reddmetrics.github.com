@@ -47,8 +47,11 @@ all sensitive to short-term fluctuations in the time-series.  As
 &#0955; decreases, the filter approaches the original time-series; it
 is absolutely sensitive to short-term variation.
 
-<img src="http://dl.dropbox.com/u/5365589/hp-ndvi8.png" height="380"
-width="591">
+<img src="http://dl.dropbox.com/u/5365589/hp.png" height="450"
+width="580">
+
+<img src="http://dl.dropbox.com/u/5365589/slider.png" height="80"
+width="580">
 
 There is no standard value for the smoothing parameter.  For
 quarterly economic data, Hodrick and Prescott suggest a &#0955; value
